@@ -66,7 +66,7 @@
 
 
 <div id="slide-out">
-    <?php include(locate_template('views/partials/log-activity-form.php')); ?>
+    <?php gravity_form(1, false, false, false, '', false); ?>
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
