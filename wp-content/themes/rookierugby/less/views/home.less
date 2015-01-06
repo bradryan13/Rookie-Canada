@@ -173,7 +173,7 @@ Version:    1.0.0
 #slide-out {
     position: fixed;
     right: 0;
-    width: 50%;
+    width: 60%;
     top: 0;
     bottom: 0;
     overflow-y: scroll;
@@ -183,7 +183,7 @@ Version:    1.0.0
     background: @lightGrey;
     box-shadow: 6px 8px 5px 5px rgba(26, 38, 60, 0.9);
     .panel-header {
-        background: @red;
+        background: @black;
         position: fixed;
         top: -55px;
         transition: top 0.3s 0s;
@@ -211,40 +211,31 @@ Version:    1.0.0
             transition: top 0.3s 0.3s;
         }
     }
-    .example {
-        padding-top: 80px;
-        background: darken(@red, 3%);
-        position: relative;
-        height: 230px;
-        border-bottom: 1px solid darken(@red, 5%);
-        overflow: hidden;
-        img {
-            position: absolute;
-            bottom: -1px;
-            left: 50%;
-            margin-left: -360px;
+    form {
+        padding: 10px 40px;
+        margin-top: 40px;
+        .gform_title {
+            display: none;
+        }
+        .top_label .gfield_label {
+            font-size: 12px;
         }
     }
-    #form, .form-confirm {
-        .inner {
-            padding: 0 40px 0 40px;
-            float: left;
-            h2 {
-                color: #FFF;
-                font-weight: bold;
-            }
-            p {
-                color: #FFF;
-                font-size: 16px;
-            }
-            label {
-                color: #FFF;
-            }
-        }
+    input#gform_submit_button_1 {
+        width: 100%;
+        height: 50px;
+        line-height: 40px;
+        background: @red;
+        color: #FFF;
+        box-shadow: none;
+        border: none;
+        .rounded;
+        cursor: pointer;
     }
-    .form-confirm {
-        display: none;
-        margin-top: 60px;
+    div#gforms_confirmation_message {
+        margin-top: 100px;
+        padding: 20px;
+        text-align: center;
     }
 }
 

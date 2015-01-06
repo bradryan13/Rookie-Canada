@@ -66,13 +66,18 @@
 
 
 <div id="slide-out">
-    <?php gravity_form(1, false, false, false, '', false); ?>
+    <div class="panel-header">
+      <h3>Log Activity</h3>
+      <div>
+        <i class="icon-close"></i>
+      </div>
+    </div>
+    <?php echo do_shortcode('[gravityform id=1 ajax=true]'); ?>
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
 <script src="<?php echo get_template_directory_uri();?>/js/main.min.js"></script>
-
 
 <?php wp_footer(); ?>
 

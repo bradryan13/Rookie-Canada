@@ -80,38 +80,4 @@ function rookie_widgets_init() {
 }
 add_action( 'widgets_init', 'rookie_widgets_init' );
 
-// Individual Comments ---------------------------------------------------------------------------------------------------------------
-
-function base_comment($comment, $args, $depth) {
-   $GLOBALS['comment'] = $comment; ?>
-
-   <li class="clearfix" id="li-comment-<?php comment_ID() ?>">
-    
-     <div class="clearfix comment-<?php comment_ID(); ?>">
-
-      <div class="comment-avatar">
-         <?php echo get_avatar($comment,$size='48'); ?>
-      </div>
-
-      <div class="comment-content">
-
-        <div class="inner">
-      
-          <div class="comment-meta">
-            <h4><?php echo get_comment_author(); ?><span> • <?php echo get_comment_date(); echo ' ' . get_comment_time(); ?></span></h4>
-          </div>
-      
-          <?php comment_text() ?>
-
-          <div class="reply">
-            <?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
-          </div>
-
-        </div>
-
-      </div>
-
-     </div>
-<?php
-        }
 
