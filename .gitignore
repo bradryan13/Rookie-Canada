@@ -97,3 +97,5 @@ wp-content/mysql.sql
 *.wmv
 *.avi
 wp-content/themes/D1ATV/comment_form.php
+
+.htaccess
