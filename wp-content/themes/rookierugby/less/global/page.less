@@ -1,0 +1,54 @@
+.page-title {
+    background: #E51F45 url('img/schools.jpg') center center no-repeat;
+    position: relative;
+    h1 {
+        text-align: left;
+        color: #FFF;
+        line-height: 242px;
+        height: 300px;
+        font-size: 65px;
+        margin: 0;
+        font-weight: bold;
+        letter-spacing: -2px;
+        z-index: 1;
+        position: relative;
+    }
+}
+
+main.row {
+    margin-top: -55px;
+    background: @lightGrey;
+    z-index: 1;
+    position: relative;
+    min-height: 800px;
+    .medium-bs;
+    .rounded;
+    .content-wrapper {
+        padding: 10px 60px 80px 60px;
+        background: #FFF;
+        border-radius: 0 3px 0 0;
+        box-shadow: -2px 0px 3px 0px rgba(50, 50, 50, 0.05);
+        min-height: 800px;
+        h1.title {
+            border-bottom: 1px solid darken(@lightGrey, 10%);
+            font-weight: bold;
+            margin: 0;
+            letter-spacing: -1px;
+            padding: 20px 0;
+            color: @red;
+        }
+        img.alignright {
+            float: right;
+            padding: 10px 0 5px 30px;
+        }
+        img.alignleft {
+            float: left;
+            padding: 10px 30px 5px 10px;
+        }
+        a {
+          text-decoration: none;
+          color: @darkGrey;
+          border-bottom: 1px dotted @red;
+        }
+    }
+}

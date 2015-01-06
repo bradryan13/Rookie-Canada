@@ -1,0 +1,243 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Front End Login and Registration Forms\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-12-11 23:36-0600\n"
+"PO-Revision-Date: 2012-12-11 23:36-0600\n"
+"Last-Translator: Pippin Williamson <pippin@pippinsplugins.com>\n"
+"Language-Team: Pippin's Plugins <pippin@pippinsplugins.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../includes/handle-register-and-login.php:21
+msgid "Username already taken"
+msgstr ""
+
+#: ../includes/handle-register-and-login.php:25
+#: ../includes/handle-register-and-login.php:92
+msgid "Invalid username"
+msgstr ""
+
+#: ../includes/handle-register-and-login.php:29
+msgid "Enter a username"
+msgstr ""
+
+#: ../includes/handle-register-and-login.php:33
+msgid "Invalid email"
+msgstr ""
+
+#: ../includes/handle-register-and-login.php:37
+msgid "Email already used"
+msgstr ""
+
+#: ../includes/handle-register-and-login.php:41
+#: ../includes/handle-register-and-login.php:97
+#: ../includes/handle-register-and-login.php:135
+msgid "Enter a password"
+msgstr ""
+
+#: ../includes/handle-register-and-login.php:45
+#: ../includes/handle-register-and-login.php:139
+msgid "Passwords don't match"
+msgstr ""
+
+#: ../includes/handle-register-and-login.php:103
+msgid "Incorrect password"
+msgstr ""
+
+#: ../includes/admin-page.php:6
+msgid "Front End Register"
+msgstr ""
+
+#: ../includes/admin-page.php:14
+msgid "Front end Register and Login Settings"
+msgstr ""
+
+#: ../includes/admin-page.php:21
+msgid "Disable CSS"
+msgstr ""
+
+#: ../includes/admin-page.php:24
+msgid "Check this if you want to disable all included CSS styling"
+msgstr ""
+
+#: ../includes/admin-page.php:27
+msgid "Disable Icons"
+msgstr ""
+
+#: ../includes/admin-page.php:30
+msgid "Check this if you want to disable icons on the login form"
+msgstr ""
+
+#: ../includes/admin-page.php:33
+msgid "Theme"
+msgstr ""
+
+#: ../includes/admin-page.php:41
+msgid "Choose the theme you wish to use for the forms"
+msgstr ""
+
+#: ../includes/admin-page.php:44
+msgid "Redirect"
+msgstr ""
+
+#: ../includes/admin-page.php:56
+msgid "No pages found"
+msgstr ""
+
+#: ../includes/admin-page.php:60
+msgid "This is the page users are sent after a successful registration"
+msgstr ""
+
+#: ../includes/admin-page.php:63
+msgid "License Key"
+msgstr ""
+
+#: ../includes/admin-page.php:66
+msgid "Enter your license key to receive automatic updates to this plugin"
+msgstr ""
+
+#: ../includes/admin-page.php:70
+msgid "Save Options"
+msgstr ""
+
+#: ../includes/form-widgets.php:6
+msgid "Login Form"
+msgstr ""
+
+#: ../includes/form-widgets.php:6
+msgid "Display a login form"
+msgstr ""
+
+#: ../includes/form-widgets.php:45
+#: ../includes/shortcodes.php:61
+msgid "You are already logged in."
+msgstr ""
+
+#: ../includes/form-widgets.php:45
+#: ../includes/shortcodes.php:61
+msgid "Logout"
+msgstr ""
+
+#: ../includes/form-widgets.php:64
+#: ../includes/form-widgets.php:116
+#: ../includes/form-widgets.php:164
+msgid "Title:"
+msgstr ""
+
+#: ../includes/form-widgets.php:68
+msgid "Redirect:"
+msgstr ""
+
+#: ../includes/form-widgets.php:79
+msgid "Register Form"
+msgstr ""
+
+#: ../includes/form-widgets.php:79
+msgid "Display a registration form"
+msgstr ""
+
+#: ../includes/form-widgets.php:127
+msgid "Change Password Form"
+msgstr ""
+
+#: ../includes/form-widgets.php:127
+msgid "Display a change password form"
+msgstr ""
+
+#: ../includes/forms.php:13
+msgid "Login to Your Account"
+msgstr ""
+
+#: ../includes/forms.php:15
+#: ../includes/forms.php:17
+#: ../includes/forms.php:49
+#: ../includes/forms.php:50
+msgid "Username"
+msgstr ""
+
+#: ../includes/forms.php:20
+#: ../includes/forms.php:22
+#: ../includes/forms.php:65
+#: ../includes/forms.php:66
+#: ../includes/forms.php:113
+msgid "Password"
+msgstr ""
+
+#: ../includes/forms.php:28
+msgid "Log me in"
+msgstr ""
+
+#: ../includes/forms.php:30
+msgid "Lost Password"
+msgstr ""
+
+#: ../includes/forms.php:30
+msgid "Lost Password?"
+msgstr ""
+
+#: ../includes/forms.php:47
+#: ../includes/forms.php:76
+msgid "Register Your Account"
+msgstr ""
+
+#: ../includes/forms.php:53
+msgid "Email"
+msgstr ""
+
+#: ../includes/forms.php:54
+msgid "email@domain.com"
+msgstr ""
+
+#: ../includes/forms.php:57
+msgid "First Name"
+msgstr ""
+
+#: ../includes/forms.php:58
+msgid "First name"
+msgstr ""
+
+#: ../includes/forms.php:61
+#: ../includes/forms.php:62
+msgid "Last Name"
+msgstr ""
+
+#: ../includes/forms.php:70
+#: ../includes/forms.php:71
+#: ../includes/forms.php:118
+msgid "Password Again"
+msgstr ""
+
+#: ../includes/forms.php:105
+msgid "Password changed successfully"
+msgstr ""
+
+#: ../includes/forms.php:110
+msgid "Change Your Password"
+msgstr ""
+
+#: ../includes/forms.php:112
+msgid "New Password"
+msgstr ""
+
+#: ../includes/forms.php:117
+msgid "Password Confirm"
+msgstr ""
+
+#: ../includes/forms.php:125
+msgid "Change Password"
+msgstr ""
+
+#: ../includes/shortcodes.php:21
+msgid "User registration is not enabled"
+msgstr ""
+
+#: ../includes/shortcodes.php:24
+msgid "You are already registered and logged in."
+msgstr ""
+

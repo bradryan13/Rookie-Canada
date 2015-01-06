@@ -1,0 +1,255 @@
+/*------------------------------------------------------------------
+[Header Stylesheet]
+
+Project:    RentersWarehouse.com
+Version:    1.0.0
+
+1. Hero
+2. Brand
+3. Menu
+
+--------------------------------------------------------------------*/
+//test
+
+#hero {
+    width: 100%;
+    margin-top: -20px;
+    height: 520px;
+    overflow: hidden;
+    text-align: center; 
+    position: relative;
+    background: url('img/hero-bg.jpg') top center no-repeat;
+    .caption {
+        height: 200px;
+        position: absolute;
+        top: 100px;
+        z-index: 2;
+        left: 15px;
+        right: 0;
+        text-align: left;
+        width: 60%;
+        h2 {
+            font-size: 60px;
+            margin-bottom: 14px;
+            letter-spacing: -1px;
+            font-weight: 700;
+            color: #FFF;
+        }
+        p {
+            color: #FFF;
+            font-size: 24px;
+            margin: 0 auto;
+            margin-bottom: 18px;
+        }
+    }
+    &:after {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        content: '';
+        z-index: 1;
+    }
+}
+ 
+#overview {
+    margin: 70px 0 0 0;
+    width: 100%;
+    #lead {
+        h3 {
+            font-size: 34px;
+            line-height: 1.4;
+            text-align: center;
+            font-weight: 300;
+            margin: 0 auto;
+            max-width: 60%;
+        }
+        a {
+            text-align: center;
+            color: @blue;
+            font-size: 18px;
+            display: block;
+            text-decoration: none;
+            margin: 15px 0 50px 0;
+            font-weight: bold;
+        }
+    }
+    .row {
+        margin-bottom: 50px;
+    }
+    .columns .inner {
+        background: #FFF;
+        box-shadow: 0 1px 1px #C8CFE6;
+        .rounded;
+    }
+    #ad .inner {
+        height: 325px;
+        background: @red;
+        position: relative;
+        text-align: center;
+        > div {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            border: 1px solid #FFF;
+            img {
+                width: 190px;
+                margin-top: 78px;
+            }
+        }
+    }
+    #about {
+      .inner {
+        img {
+          border-radius: 3px 3px 0 0;
+        }
+        h3 {
+          text-align: center;
+          font-size: 28px;
+          color: @red;
+        }
+        p {
+          text-align: center;
+          padding: 10px 20px 40px 20px;
+        }
+      }
+    }
+}
+
+.rsSlide {
+    &:after {
+        background-image: linear-gradient(to right bottom, rgba(232, 0, 72, 0.55) 0%, rgba(16, 30, 52, 0.65) 100%);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        content: '';
+        z-index: 1;
+    }
+    .title {
+        position: absolute;
+        text-align: center;
+        font-size: 34px;
+        top: 115px;
+        z-index: 2;
+        color: #FFF;
+        width: 100%;
+        text-decoration: none;
+        font-family: @headerFont;
+    }
+    .sub-title {
+        position: absolute;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.4;
+        top: 160px;
+        z-index: 2;
+        color: #FFF;
+        width: 500px;
+        left: 50%;
+        margin-left: -250px;
+        text-decoration: none;  
+    }
+}
+
+#featured-tag {
+    position: absolute;
+    background: @red;
+    bottom: 0;
+    padding: 8px 20px;
+    z-index: 3;
+    left: 14px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* 6. Slideout ---------------------------------------------------------------*/
+
+#slide-out {
+    position: fixed;
+    right: 0;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    z-index: 10000;
+    transform: translate3d(100%, 0, 0);
+    transition: all .3s cubic-bezier(.33,0,.2,1);
+    background: #000;
+    box-shadow: 6px 8px 5px 5px rgba(26, 38, 60, 0.9);
+    .panel-header {
+        background: #000;
+        position: fixed;
+        top: -55px;
+        transition: top 0.3s 0s;
+        height: 55px;
+        width: 100%;
+        z-index: 100;
+        h3 {
+            margin: 0;
+            line-height: 55px;
+            float: left;
+            color: #FFF;
+            font-size: 20px;
+            padding: 0 40px;
+        }
+        i {
+            color: #FFF;
+            position: absolute;
+            font-size: 18px;
+            padding: 18px 35px;
+            cursor: pointer;
+            right: 0;
+        }
+        &.open {
+            top: 0;
+            transition: top 0.3s 0.3s;
+        }
+    }
+    .example {
+        padding-top: 80px;
+        background: darken(@red, 3%);
+        position: relative;
+        height: 230px;
+        border-bottom: 1px solid darken(@red, 5%);
+        overflow: hidden;
+        img {
+            position: absolute;
+            bottom: -1px;
+            left: 50%;
+            margin-left: -360px;
+        }
+    }
+    #form, .form-confirm {
+        .inner {
+            padding: 0 40px 0 40px;
+            float: left;
+            h2 {
+                color: #FFF;
+                font-weight: bold;
+            }
+            p {
+                color: #FFF;
+                font-size: 16px;
+            }
+            label {
+                color: #FFF;
+            }
+        }
+    }
+    .form-confirm {
+        display: none;
+        margin-top: 60px;
+    }
+}
+
+#slide-out.open {
+    transform: translate3d(0, 0, 0);
+}
+    

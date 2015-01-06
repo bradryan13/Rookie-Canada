@@ -1,0 +1,142 @@
+/*
+ * # Semantic - Button
+ * http://github.com/jlukic/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+            Button
+*******************************/
+
+/* Prototype */
+
+.ui.button {
+
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+
+  min-height: 42px;
+  line-height: 42px;
+
+  outline: none;
+  border: none;
+  background-color: #FAFAFA;
+  color: #FFF;
+
+  margin: 0;
+  padding: 0 30px;
+
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+
+  .rounded;
+  .quick-transition;
+
+}
+
+form .ui.button {
+  margin-top: 6px;
+}
+
+/* Icons */
+.ui.button.icon {
+  padding: 0 20px;
+  i {
+    padding-left: 10px;
+  }
+}
+
+/* Fluid */
+.ui.fluid.buttons,
+.ui.button.fluid,
+.ui.fluid.buttons > .button {
+  display: block;
+  width: 100%;
+}
+
+/* Extra Wide */
+.ui.wide.buttons,
+.ui.button.wide,
+.ui.wide.buttons > .button {
+  padding: 0 50px;
+}
+
+/*--- Red ---*/
+.ui.red.buttons .button,
+.ui.red.button {
+  background-color: @red;
+  color: #FFF;
+}
+.ui.red.buttons .button:hover,
+.ui.red.button:hover,
+.ui.red.buttons .active.button,
+.ui.red.button.active {
+  background-color: @red;
+  color: #FFF;
+}
+
+/*--- Blue ---*/
+.ui.blue.buttons .button,
+.ui.blue.button {
+  background-color: @blue;
+  color: #FFFFFF;
+}
+.ui.blue.buttons .button:hover,
+.ui.blue.button:hover,
+.ui.blue.buttons .active.button,
+.ui.blue.button.active {
+  background-color: @blue;
+  color: #FFF;
+}
+
+/*--- Ghost ---*/
+.ui.ghost.buttons .button,
+.ui.ghost.button {
+  background-color: transparent;
+  color: #FFF;
+  border: 1px solid #FFF;
+}
+
+.ui.ghost.button {
+  &.blue {
+    color: @blue;
+    border: 1px solid @blue;
+  }
+  &.red {
+    color: @red;
+    border: 1px solid @red;
+  }
+  &.grey {
+    color: @grey;
+    border: 1px solid @grey;
+  }
+}
+
+.ui.ghost.buttons .button:hover,
+.ui.ghost.button:hover,
+.ui.ghost.buttons .active.button,
+.ui.ghost.button.active {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #FFF;
+}
+

@@ -1,0 +1,46 @@
+/*------------------------------------------------------------------
+[Style Guide Stylesheet]
+
+Project:    RentersWarehouse.com
+Version:    1.0.0
+
+/* 1. Imports   --------------------------------------------------------*/
+
+@import "global/header.less";
+@import "global/page.less";
+@import "global/sub-menu.less";
+@import "global/footer.less";
+
+
+@import "views/colors.less";
+@import "views/home.less";
+@import "views/games.less";
+
+
+@import "vendor/royal-slider.less";
+
+@import "base/collections/variables.less";
+@import "base/collections/mixins.less";
+
+.wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#extend {
+    min-height: 1000px;
+}
+
+body {
+    position: relative;
+    background: @lightGrey;
+    &.dimmed {
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 1439px) {
+
+}
+

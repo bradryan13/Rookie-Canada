@@ -1,0 +1,55 @@
+/*
+ * # Semantic List - Flat
+ * http://github.com/jlukic/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ * Released: April 26 2014
+ */
+
+/*******************************
+            List
+*******************************/
+
+ol {
+  list-style-type: none;
+  list-style-type: decimal !ie; /*IE 7- hack*/ 
+  margin: 30px 0 30px 55px;
+  padding: 0;
+  counter-reset: li-counter;
+
+    > li {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 8px;
+    border-left: 2px solid @lightGrey;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: -20px;
+      width: 0.8em;
+      font-size: 16px;
+      line-height: 1;
+      font-weight: bold;
+      text-align: right;
+      color: @grey;
+      content: counter(li-counter);
+      counter-increment: li-counter;
+    }
+  }
+}
+
+ul {
+  list-style-type: disc;
+  margin: 20px 0 20px 55px;
+   > li {
+      position: relative;
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+}
+
