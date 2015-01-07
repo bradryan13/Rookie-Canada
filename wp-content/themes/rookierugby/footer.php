@@ -8,48 +8,28 @@
 
             <div class="large-6 columns">
                 <h4><a href="#">Schools</a></h4>
-                    <ul>
-                        <li><a href="#">Free Rental Analysis</a></li>
-                        <li><a href="#">Tenant Matching</a></li>
-                        <li><a href="#">Property Management</a></li>
-                        <li><a href="#">Extra Protection</a></li>
-                    </ul>                        
+                <?php wp_nav_menu( array( 'theme_location' => 'schools', 'menu_class' => 'footer-menu', 'container' => false)); ?>
             </div>
 
             <div class="large-6 columns">
                 <h4><a href="#">Rugby Clubs</a></h4>
-                    <ul>
-                        <li><a href="#">Our Story</a></li>
-                        <li><a href="#">Our Amazing Team</a></li>
-                        <li><a href="#">Join our Team</a></li>
-                        <li><a href="#">Franchise Oportunities</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Resource Center</a></li>
-                    </ul>    
+                <?php wp_nav_menu( array( 'theme_location' => 'clubs', 'menu_class' => 'footer-menu', 'container' => false)); ?>
+  
             </div>
 
             <div class="large-6 columns">
                 <h4><a href="#">Community Organizations</a></h4>
-                    <ul>
-                        <li><a href="#">Maintenance Request</a></li>
-                        <li><a href="#">Change my lease</a></li>
-                        <li><a href="#">Notice to vacate</a></li>
-                        <li><a href="#">Customer Service</a></li>
-                        <li><a href="#">Property Inspection</a></li>
-                        <li><a href="#">Lease Application</a></li>
-                    </ul>    
+                <?php wp_nav_menu( array( 'theme_location' => 'community', 'menu_class' => 'footer-menu', 'container' => false)); ?>
+  
             </div>
 
             <div class="large-6 columns">
-                <h4><a href="#">About</a></h4>
-                    <ul>
-                        <li><a href="#">Maintenance Request</a></li>
-                        <li><a href="#">Change my lease</a></li>
-                        <li><a href="#">Notice to vacate</a></li>
-                        <li><a href="#">Customer Service</a></li>
-                        <li><a href="#">Property Inspection</a></li>
-                        <li><a href="#">Lease Application</a></li>
-                    </ul>    
+                <h4><a href="#">Players & Parents</a></h4>
+                <?php wp_nav_menu( array( 'theme_location' => 'players', 'menu_class' => 'footer-menu', 'container' => false)); ?>
+            </div>
+
+            <div id="social" class="row"> 
+                <h4>Connect with us:</h4> <a href="https://www.facebook.com/RugbyCanada" class="ui ghost button">Facebook <i target="blank" class="icon-facebook"></i></a>  <a href="https://twitter.com/rugbycanada" target="blank" class="ui ghost button">Twitter <i class="icon-twitter"></i></a> 
             </div>
 
         </div>

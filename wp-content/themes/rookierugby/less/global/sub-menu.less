@@ -16,7 +16,7 @@ Version:    2.0
 
 .sidebar {
     padding: 0;
-    background: @lightGrey;
+    background: lighten(@lightGrey, 2%);
     border-radius: 3px 0 0 0;
     z-index: 1;
     position: relative;
@@ -33,12 +33,12 @@ Version:    2.0
     display: block;
     font-size: 14px;
     position: relative;
-    color: @grey;
+    color: @darkGrey;
     font-weight: bold;
     line-height: 55px;
     padding-left: 45px;
-    background: @lightGrey;
-    border-bottom: 1px solid darken(@lightGrey, 4%);
+    background: lighten(@lightGrey, 2%);
+    border-bottom: 1px solid @lightGrey;
     text-decoration: none;
     box-shadow: inset -2px 0px 1px 0px rgba(50, 50, 50, 0.05);
 }

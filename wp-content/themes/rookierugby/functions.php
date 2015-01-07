@@ -22,9 +22,10 @@ function rookierugby_setup() {
   register_nav_menus( array(
     'primary'        => __( 'Primary Menu', 'rookie' ), 
     'schools'       => __( 'Schools Menu', 'rookie' ), 
-    'coaches'        => __( 'Coaches Menu', 'rookie' ), 
+    'clubs'        => __( 'Rugby Clubs Menu', 'rookie' ),
     'community'    => __( 'Community Organizations Menu', 'rookie' ), 
-    'clubs'        => __( 'Rugby Clubs Menu', 'rookie' ), 
+    'clubs'        => __( 'Rugby Clubs Menu', 'rookie' ),
+    'players'        => __( 'Players Menu', 'rookie' ), 
     'mobile'       => __( 'Mobile Menu', 'rookie' ), 
   ) );
 

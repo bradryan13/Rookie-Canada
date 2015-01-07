@@ -137,7 +137,7 @@ header #log-activity a:hover {
 }
 main.row {
   margin-top: -55px;
-  background: #f0f2f7;
+  background: #f7f8fb;
   z-index: 1;
   position: relative;
   min-height: 800px;
@@ -188,7 +188,7 @@ Version:    2.0
 /* 1. Sidebar  -----------------------------------------------------*/
 .sidebar {
   padding: 0;
-  background: #f0f2f7;
+  background: #f7f8fb;
   border-radius: 3px 0 0 0;
   z-index: 1;
   position: relative;
@@ -203,12 +203,12 @@ Version:    2.0
   display: block;
   font-size: 14px;
   position: relative;
-  color: #a2adc6;
+  color: #616c77;
   font-weight: bold;
   line-height: 55px;
   padding-left: 45px;
-  background: #f0f2f7;
-  border-bottom: 1px solid #e3e6f0;
+  background: #f7f8fb;
+  border-bottom: 1px solid #f0f2f7;
   text-decoration: none;
   box-shadow: inset -2px 0px 1px 0px rgba(50, 50, 50, 0.05);
 }
@@ -335,6 +335,30 @@ footer #copy-right {
   line-height: 30px;
   padding: 0;
   margin-top: 20px;
+}
+footer #social {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  right: 40px;
+}
+footer #social h4 {
+  float: left;
+  border-bottom: none;
+  line-height: 30px;
+  margin-right: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "iskra";
+  color: rgba(255, 255, 255, 0.5);
+}
+footer #social a {
+  float: left;
+  margin-right: 15px;
+  min-height: 30px;
+  line-height: 30px;
+  border-color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 /*------------------------------------------------------------------
 [Header Stylesheet]
@@ -1089,8 +1113,14 @@ img.rsImg {
 }
 body {
   position: relative;
-  background: #f0f2f7;
+  background: #3b3e45;
 }
 body.dimmed {
   overflow: hidden;
+}
+#page-wrapper {
+  max-width: 1480px;
+  margin: 0 auto;
+  background: #f0f2f7;
+  box-shadow: 0px 20px 20px 15px rgba(0, 0, 0, 0.2);
 }
