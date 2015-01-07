@@ -22,6 +22,10 @@
 
 <body <?php body_class( $class ); ?>> 
 
+    <div class="mobile-menu">
+            <?php wp_nav_menu( array( 'theme_location' => 'mobile', 'menu_class' => 'my-menu') ); ?>
+    </div>
+
     <div id="page-wrapper">
       
     <header>
@@ -30,6 +34,12 @@
 
             <div id="brand">
                 <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri();?>/img/logo.png"></a>
+            </div>
+
+            <div id="side-toggle">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
             </div>
 
             <div id="log-activity"><a class="activity-trigger">Log Activity</a></div>

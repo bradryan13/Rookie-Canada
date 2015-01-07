@@ -2,7 +2,7 @@
 
 <div class="row" id="about">
 
-        <div class="large-8 columns">
+        <div class="medium-8 columns">
 
             <div class="inner cf">
 
@@ -14,7 +14,7 @@
         </div>
 
 
-        <div class="large-8 columns">
+        <div class="medium-8 columns">
 
             <div class="inner cf">
 
@@ -26,7 +26,7 @@
 
         </div>
 
-        <div class="large-8 columns">
+        <div class="medium-8 columns">
 
             <div class="inner cf">
 
@@ -42,14 +42,14 @@
 
 <div class="row">
 
-  <div class="large-16 columns">
+  <div class="medium-16 columns">
     <div class="inner">
             <div id="featured-tag">Featured</div>
             <?php echo do_shortcode( '[new_royalslider id="1"]' ); ?>
     </div>
 </div>
 
-<div class="large-8 columns" id="ad">
+<div class="medium-8 columns" id="ad">
     <div class="inner">
         <div><a href="#"><img src="<?php echo get_template_directory_uri();?>/img/under-armour.png"></a></div>
     </div>

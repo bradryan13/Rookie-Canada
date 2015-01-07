@@ -1,0 +1,14 @@
+/* 1. Desktop Overrides --------------------------------------------------*/
+.mobile {
+  display: none !important;
+}
+.desktop {
+  display: inline-block !important;
+}
+/* 2. Small Desktop & Landscape Tablet    --------------------------------*/
+@media (max-width: 1100px) {
+  header ul.menu li a {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+}

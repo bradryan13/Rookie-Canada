@@ -29,7 +29,7 @@ Version:    2.0
 
 /* 2. Sub-menu Level 1 --------------------------------------------------*/
 
-.sub-menu > li > a {
+aside .sub-menu > li > a {
     display: block;
     font-size: 14px;
     position: relative;
@@ -52,7 +52,7 @@ Version:    2.0
 }
 
 //dots
-.sub-menu > li a {
+aside .sub-menu > li a {
     &:before {
         border-radius: 50%;
         box-shadow: 0 0 0 2px rgba(255, 255, 255, 0);
@@ -70,7 +70,7 @@ Version:    2.0
 
 /* 3. Sub-menu Level 2 --------------------------------------------------*/
 
-.sub-menu ul li a {
+aside .sub-menu ul li a {
     height: 40px;
     display: block;
     position: relative;
@@ -83,15 +83,15 @@ Version:    2.0
 
 /* 4. Active Subpage ---------------------------------------------------*/
 
-.sub-menu > li > a.active:before, .sub-menu > li.current_page_item > a:before {
+aside .sub-menu > li > a.active:before, aside .sub-menu > li.current_page_item > a:before {
     background: @red;
 }
 
-.sub-menu > li >a.active, .sub-menu > li.current_page_item > a {
+aside .sub-menu > li >a.active, aside .sub-menu > li.current_page_item > a {
     background: darken(@lightGrey, 2%);
 }
 
-.sub-menu > li > a.active:after, .sub-menu > li.current_page_item > a:after {
+aside .sub-menu > li > a.active:after, aside .sub-menu > li.current_page_item > a:after {
     right: -8px;
     bottom: 50%;
     margin-bottom: -10px;
@@ -108,7 +108,7 @@ Version:    2.0
 
 /* 5. Fixed Element --------------------------------------------------*/
 
-.sub-menu.fixed {
+aside .sub-menu.fixed {
      position: fixed;
      top: 0;
      width: 315px;

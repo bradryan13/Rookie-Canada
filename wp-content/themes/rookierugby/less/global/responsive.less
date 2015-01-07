@@ -1,0 +1,87 @@
+
+/* 1. Desktop Overrides --------------------------------------------------*/
+.mobile {
+  display: none !important;
+}
+.desktop {
+  display: inline-block !important;
+}
+
+#side-toggle {
+    display: none;
+}
+
+/* 2. Small Desktop & Landscape Tablet    --------------------------------*/
+
+@media (max-width: 1100px) {
+    header ul.menu li a {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    header {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 1023px) {
+    #menu-main-menu {
+        display: none;
+    }
+    header #brand a img {
+        width: 180px;
+    }
+    header {
+        height: 55px;
+        padding: 0;
+    }
+    #log-activity {
+        display: none;
+    }
+    header #brand {
+        position: absolute;
+        left: 50%;
+        margin-left: -90px;
+        width: 180px;
+    }
+    #side-toggle {
+        width: 75px;
+        float: left;
+        position: relative;
+        height: 55px;
+        cursor: pointer;
+        display: block;
+        .line {
+            display: block;
+            background: #FFF;
+            height: 4px;
+            position: absolute;
+            left: 20px;
+            right: 20px;
+            transition: all 0.3s;
+            &.line-1 {
+                top: 14px;
+            }
+            &.line-2 {
+                top: 23px;
+            }
+            &.line-3 {
+                top: 32px;
+            }
+        }
+    }
+    #side-toggle.active {
+        .line-1 {
+            transform: translateY(8px) translateX(0) rotate(45deg);
+        }
+        .line-2 {
+            opacity: 0;
+        }
+        .line-3 {
+            transform: translateY(-10px) translateX(0) rotate(-45deg);
+        }
+    }
+    aside {
+        display: none;
+    }
+
+}

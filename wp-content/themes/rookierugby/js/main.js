@@ -5,12 +5,14 @@
 // @codekit-append "semantic/transition.js"
 // @codekit-append "semantic/form.js"
 
+// @codekit-append "responsive.js"
+
 // @codekit-append "vendor/inputmask.js" 
 // @codekit-append "vendor/royal-slider.js"
 // @codekit-append "vendor/skrollr.js"
 // @codekit-append "vendor/instagram.js"
 // @codekit-append "vendor/cookie.js"
-
+// @codekit-append "vendor/jquery.mmenu.min.js"
 
 
 $( document ).ready(function() {
@@ -76,5 +78,32 @@ $( document ).ready(function() {
             $("#slide-out, .panel-header").removeClass("open");
         }
     });
+
+
+    $(".mobile-menu").mmenu({}, {
+            selectedClass: "current_page_item"
+        })
+        .on( "opening.mm", function() {
+            $('#side-toggle').addClass('active');
+        })
+        .on( "closing.mm", function() {
+            $('#side-toggle').removeClass('active');
+        });
+
+
+    $("#side-toggle").click(function() {
+         $(".mobile-menu").trigger("open.mm");
+    });
+
+    $( ".mm-current .menu-item a").click(function() {
+        if (!$(this).hasClass("mm-subopen")) { 
+            $(".mobile-menu").trigger("close.mm");
+        }
+    });
+
+
+
+    $(".mobile-menu").find( ".mm-subopen" ).addClass( "mm-fullsubopen" );
+
 
 });
