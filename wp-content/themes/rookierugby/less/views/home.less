@@ -17,7 +17,14 @@ Version:    1.0.0
     overflow: hidden;
     text-align: center; 
     position: relative;
-    background: url('img/hero-bg.jpg') top center no-repeat;
+    .hero-bg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background: url('img/hero-bg.jpg') top center no-repeat;
+    }
     .caption {
         height: 200px;
         position: absolute;

@@ -21,6 +21,7 @@ header {
   position: relative;
   z-index: 1;
   background: #d5183c;
+  background: -webkit-linear-gradient(top, #d5183c 0%, #cc1739 100%);
   border-bottom: 1px solid #c31637;
   -webkit-transition: 0.2s ease-in;
           transition: 0.2s ease-in;
@@ -353,6 +354,13 @@ Version:    1.0.0
   overflow: hidden;
   text-align: center;
   position: relative;
+}
+#hero .hero-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
   background: url('img/hero-bg.jpg') top center no-repeat;
 }
 #hero .caption {
