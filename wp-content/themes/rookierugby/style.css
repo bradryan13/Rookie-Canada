@@ -454,10 +454,6 @@ footer #social a {
   #footer-menu {
     display: none;
   }
-  .page-title h1 {
-    text-align: center;
-    font-size: 50px;
-  }
   main.row .content-wrapper {
     padding: 0 30px;
   }
@@ -468,6 +464,41 @@ footer #social a {
   #overview #about .inner h3 {
     margin: 20px 0 0 0;
     font-size: 20px;
+  }
+  #new-royalslider-1 {
+    margin-bottom: 30px;
+  }
+  body #featured-tag {
+    bottom: 30px;
+  }
+  .page-title h1 {
+    height: 150px;
+    text-align: left;
+    line-height: 150px;
+    color: #FFF;
+    padding-left: 25px;
+    font-size: 38px;
+  }
+  main.row {
+    margin-top: 0;
+  }
+}
+@media (max-width: 746px) {
+  body #hero {
+    height: 420px;
+  }
+  body #hero .caption {
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+    left: 0;
+    right: 0;
+  }
+  body #hero .caption h2 {
+    font-size: 40px;
+  }
+  body #hero .caption p {
+    font-size: 18px;
   }
 }
 /*------------------------------------------------------------------

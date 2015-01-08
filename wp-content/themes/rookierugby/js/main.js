@@ -13,6 +13,8 @@
 // @codekit-append "vendor/instagram.js"
 // @codekit-append "vendor/cookie.js"
 // @codekit-append "vendor/jquery.mmenu.min.js"
+// @codekit-append "vendor/modernizer.js"
+
 
 
 $( document ).ready(function() {
@@ -34,7 +36,10 @@ $( document ).ready(function() {
         $.cookie('language', 'english', { expires: 365 });
     });
 
-    var s = skrollr.init();
+    if(!Modernizr.touch){
+      skrollr.init();
+    };
+
 
     var header = $('header');
 
