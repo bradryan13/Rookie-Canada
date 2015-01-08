@@ -482,6 +482,12 @@ footer #social a {
   main.row {
     margin-top: 0;
   }
+  body footer {
+    padding: 10px 0 0 0;
+  }
+  footer #statement h3 {
+    width: 80%;
+  }
 }
 @media (max-width: 746px) {
   body #hero {
@@ -499,6 +505,54 @@ footer #social a {
   }
   body #hero .caption p {
     font-size: 18px;
+  }
+  .page-title h1 {
+    height: 100px;
+    text-align: left;
+    line-height: 100px;
+    color: #d5183c;
+    background: #f0f2f7;
+    padding-left: 15px;
+    font-size: 30px;
+  }
+  main.row .content-wrapper {
+    padding: 0 15px;
+    font-size: 14px;
+  }
+  main.row .content-wrapper h1.title {
+    font-size: 24px;
+    color: #18181a;
+  }
+  ul {
+    margin: 10px 0 10px 20px;
+  }
+  p {
+    margin-top: 20px 0;
+  }
+  header {
+    height: 50px;
+  }
+  header #brand a img {
+    margin-top: 3px;
+  }
+  header #brand {
+    margin-left: 0;
+    left: auto;
+    margin-right: 0;
+    right: 35px;
+  }
+  #side-toggle {
+    height: 50px;
+    border-right: 1px solid #be1536;
+  }
+  .home .medium-8 {
+    margin-bottom: 20px;
+  }
+  a.title {
+    left: 10px;
+    right: 10px;
+    top: 20px;
+    padding: 0;
   }
 }
 /*------------------------------------------------------------------
