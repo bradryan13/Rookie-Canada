@@ -662,8 +662,8 @@ Version:    1.0.0
   border: 1px solid #FFF;
 }
 #overview #ad .inner > div img {
-  width: 190px;
-  margin-top: 78px;
+  width: 250px;
+  margin-top: 18px;
 }
 #overview #about .inner img {
   border-radius: 3px 3px 0 0;

@@ -51,7 +51,7 @@
 
 <div class="large-8 columns" id="ad">
     <div class="inner">
-        <div><a href="#"><img src="<?php echo get_template_directory_uri();?>/img/under-armour.png"></a></div>
+        <div><a href="#"><img src="<?php echo get_template_directory_uri();?>/img/rc.png"></a></div>
     </div>
 </div>
 
