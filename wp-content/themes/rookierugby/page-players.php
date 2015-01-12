@@ -5,7 +5,7 @@ Template Name: Players
 
 get_header(); 
 
-$page_header = 'Players';
+$page_header = 'Players & Parents';
 
 include(locate_template('views/partials/page-header.php')); ?>
 

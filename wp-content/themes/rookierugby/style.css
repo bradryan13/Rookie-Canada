@@ -22,7 +22,6 @@ header {
   z-index: 1;
   background: #d5183c;
   background: -webkit-linear-gradient(top, #d5183c 0%, #cc1739 100%);
-  border-bottom: 1px solid #c31637;
   -webkit-transition: 0.2s ease-in;
           transition: 0.2s ease-in;
 }
@@ -736,7 +735,7 @@ Version:    1.0.0
   box-shadow: 6px 8px 5px 5px rgba(26, 38, 60, 0.9);
 }
 #slide-out .panel-header {
-  background: #18181a;
+  background: #d5183c;
   position: fixed;
   top: -55px;
   -webkit-transition: top 0.3s 0s;
@@ -799,53 +798,39 @@ Version:    1.0.0
 #games {
   background: #f0f2f7;
   margin-top: -60px;
-  padding: 0 0 40px 0;
+  padding: 0 10px 40px 10px;
 }
-#games .controls {
-  background: #D9DEEB;
-  width: 100%;
-  height: 60px;
-  padding: 0 20px;
-}
-#games .controls button {
-  color: #a2adc6;
-  text-transform: uppercase;
-  font-weight: 400;
-  border-radius: 0;
-  line-height: 32px;
-  min-height: 32px;
-  font-size: 12px;
-  margin-right: 8px;
-  margin-top: 13px;
-  padding: 0 15px;
-}
-#games .controls button.active {
-  background: #d5183c;
-  color: #FFF;
+#games h2 {
+  margin: 0 20px;
+  color: #18181a;
+  border-bottom: 1px solid #dfe4ee;
+  padding: 0 0 10px 0;
+  margin-bottom: 15px;
 }
 #games ul#cards {
   list-style: none;
   margin: 0;
-  padding: 20px;
+  padding: 0 20px;
 }
 #games ul#cards li {
-  width: 33.33%;
   float: left;
   padding: 0;
+  width: 100%;
 }
 #games ul#cards li .inner {
   background: #FFF;
   box-shadow: 0 1px 1px #C8CFE6;
   cursor: pointer;
+  padding: 5px 20px;
   border-radius: 3px;
-  margin: 12px;
+  margin: 5px 0;
 }
 #games ul#cards li .inner img {
   border-radius: 3px 3px 0 0;
 }
 #games ul#cards li .inner .title {
-  padding: 12px 15px;
-  font-size: 22px;
+  padding: 5px 0;
+  font-size: 18px;
   border-bottom: 1px solid #f0f2f7;
 }
 #games ul#cards li .inner .title a {
@@ -855,7 +840,7 @@ Version:    1.0.0
 }
 #games ul#cards li .inner .module,
 #games ul#cards li .inner .time {
-  padding: 10px 12px;
+  padding: 10px 0;
   font-weight: bold;
   font-size: 12px;
   color: #a2adc6;
@@ -864,6 +849,9 @@ Version:    1.0.0
 }
 #games ul#cards li .inner .time {
   float: right;
+}
+#games ul#cards li .inner p {
+  margin: 10px 0 0 0;
 }
 #game h3 {
   color: #d5183c;
@@ -944,6 +932,54 @@ Version:    1.0.0
 }
 #game-sidebar li:hover {
   background: #f7f8fb;
+}
+#modules {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+#modules .module .inner {
+  background: url('http://brads-macbook-pro-2.local:5757/wp-content/themes/rookierugby/img/safe.jpg') top center no-repeat;
+  text-align: center;
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+}
+#modules .module .inner:after {
+  background: rgba(213, 24, 60, 0.9);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: absolute;
+  content: '';
+}
+#modules .module .inner a {
+  text-align: center;
+  color: #FFF;
+  font-size: 24px;
+  text-decoration: none;
+  line-height: 200px;
+  position: relative;
+  z-index: 1;
+}
+#modules .module .inner a:before {
+  background: #FFF;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  top: -6px;
+  content: '';
+  left: 0;
+}
+#modules .module .inner a:after {
+  background: #FFF;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -8px;
+  content: '';
+  left: 0;
+  right: 0;
 }
 /******************************
 *
@@ -1677,6 +1713,6 @@ body.dimmed {
 #page-wrapper {
   max-width: 1480px;
   margin: 0 auto;
-  background: #f0f2f7;
+  background: #D6D9E0;
   box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 0.2);
 }

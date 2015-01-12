@@ -21,17 +21,39 @@ include(locate_template('views/partials/page-header.php'));
     if( $the_query->have_posts() ): ?>
 
 <main id="games" class="row">
-    
-        <div class="controls">  
-            <button class="filter ui button active" data-filter="all">All</button>
-            <button class="filter ui button" data-filter=".Beginner">Module 1</button>
-            <button class="filter ui button" data-filter=".Intermediate">Module 2</button>
-            <button class="filter ui button" data-filter=".Advanced">Module 3</button>
-            <button class="filter ui button" data-filter=".Advanced">Module 4</button>
-            <button class="filter ui button" data-filter=".Advanced">Module 5</button>
+
+        <div class="row" id="modules">
+
+            <h2>Programs</h2>
+
+            <div class="columns module medium-6">
+                <div class="inner">
+                    <a href='#'>16-Week Plan</a>
+                </div>
+            </div>
+
+            <div class="columns module medium-6">
+                <div class="inner">
+                    <a href='#'>8-Week Plan</a>
+                </div>
+            </div>
+
+            <div class="columns module medium-6">
+                <div class="inner">
+                    <a href='#'>8-Week Plan</a>
+                </div>
+            </div>
+
+            <div class="columns module medium-6">
+                <div class="inner">
+                    <a href='#'>4-Week Plan</a>
+                </div>
+            </div>
 
         </div>
 
+        <h2>Individual Games</h2>
+        
         <ul id="cards">
 
         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?> 
