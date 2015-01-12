@@ -16,6 +16,10 @@
     <script src="//use.typekit.net/hiw3gjp.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
 
+    <!-- Favicon -->    
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri();?>/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="<?php echo get_template_directory_uri();?>/favicon.ico" type="image/x-icon">
+
     <?php wp_head(); ?>
 
 </head>
