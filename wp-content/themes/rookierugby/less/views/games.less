@@ -4,7 +4,7 @@
     padding: 0 10px 40px 10px;
     h2 {
         margin: 0 20px;
-        color: @black;
+        color: @darkGrey;
         border-bottom: 1px solid darken(@lightGrey, 5%);
         padding: 0 0 10px 0;
         margin-bottom: 15px;
@@ -22,6 +22,7 @@
                 box-shadow: 0 1px 1px #C8CFE6;
                 cursor: pointer;
                 padding: 5px 20px;
+                .rounded;
                 img {
                     border-radius: 3px 3px 0 0;
                 }
@@ -155,8 +156,9 @@
 
 #modules {
     padding: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     .module {
+        padding: 0 8px;
         .inner {
             background: url('http://brads-macbook-pro-2.local:5757/wp-content/themes/rookierugby/img/safe.jpg') top center no-repeat;
             text-align: center;
@@ -171,6 +173,7 @@
                 top: 0;
                 position: absolute;
                 content: '';
+                .rounded;
             }
             a {
                 text-align: center;

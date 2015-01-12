@@ -277,7 +277,7 @@ footer {
 }
 footer #footer-menu {
   border-bottom: 1px solid #242427;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 footer #footer-menu h4 {
   padding-bottom: 10px;
@@ -325,6 +325,7 @@ footer #statement h3 {
   margin: 15px auto;
   line-height: 1.4;
   font-size: 22px;
+  text-transform: none;
 }
 footer #copy-right {
   background: #000;
@@ -337,7 +338,7 @@ footer #copy-right {
 }
 footer #social {
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   right: 20px;
 }
 footer #social h4 {
@@ -565,6 +566,9 @@ Version:    1.0.0
 3. Menu
 
 --------------------------------------------------------------------*/
+.home #page-wrapper {
+  background: #f0f2f7;
+}
 #hero {
   width: 100%;
   margin-top: -20px;
@@ -802,7 +806,7 @@ Version:    1.0.0
 }
 #games h2 {
   margin: 0 20px;
-  color: #18181a;
+  color: #616c77;
   border-bottom: 1px solid #dfe4ee;
   padding: 0 0 10px 0;
   margin-bottom: 15px;
@@ -935,7 +939,10 @@ Version:    1.0.0
 }
 #modules {
   padding: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+}
+#modules .module {
+  padding: 0 8px;
 }
 #modules .module .inner {
   background: url('http://brads-macbook-pro-2.local:5757/wp-content/themes/rookierugby/img/safe.jpg') top center no-repeat;
@@ -952,6 +959,7 @@ Version:    1.0.0
   top: 0;
   position: absolute;
   content: '';
+  border-radius: 3px;
 }
 #modules .module .inner a {
   text-align: center;
@@ -1713,6 +1721,6 @@ body.dimmed {
 #page-wrapper {
   max-width: 1480px;
   margin: 0 auto;
-  background: #D6D9E0;
+  background: #E1E6EC;
   box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 0.2);
 }

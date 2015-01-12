@@ -12,8 +12,6 @@ include(locate_template('views/partials/page-header.php')); ?>
     
         <div id="game">
             <?php get_template_part( 'views/partials/content', 'game' ); ?>
-            <h3>Comments</h3>
-            <?php  global $withcomments; $withcomments = true; comments_template(); ?>
         </div>
 
     </section>
