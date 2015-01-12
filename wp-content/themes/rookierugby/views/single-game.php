@@ -8,7 +8,7 @@ include(locate_template('views/partials/page-header.php')); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-    <section class="content-wrapper large-17 columns">
+    <section class="content-wrapper game-wrapper large-17 columns">
     
         <div id="game">
             <?php get_template_part( 'views/partials/content', 'game' ); ?>
@@ -18,28 +18,27 @@ include(locate_template('views/partials/page-header.php')); ?>
 
 
     <aside id="game-sidebar" class="large-7 columns sidebar">
-        <h2>Module 1</h2>
+        <h2>More Games...</h2>
+
+    <?php // args
+    $args = array(
+        'posts_per_page'=> 10,
+        'post_type' => 'game',
+    );
+    // get results
+    $the_query = new WP_Query( $args );
+    if( $the_query->have_posts() ): ?>
+
         <ul>
+        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?> 
+        <?php $terms = get_the_terms( $post->ID , 'modules' ); ?>
+
             <li class="active">
-                <div class="number">1</div>
-                <div class="title">Decision Making</div>
+                <div class="title"><a href="<?php echo get_permalink();?>"><?php the_title(); ?></a></div>
             </li>
-                        <li>
-                <div class="number">2</div>
-                <div class="title">Decision Game Making</div>
-            </li>
-                        <li>
-                <div class="number">3</div>
-                <div class="title">Key Away</div>
-            </li>
-            <li>
-                <div class="number">4</div>
-                <div class="title">Sharks and Minows</div>
-            </li>
-            <li>
-                <div class="number">5</div>
-                <div class="title">Game Number 5</div>
-            </li>
+
+        <?php endwhile; ?>
+        <?php endif; ?>
         </ul>
     </aside>
 

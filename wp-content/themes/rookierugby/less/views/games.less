@@ -1,5 +1,5 @@
 #games {
-    background: @lightGrey;
+    background: #FFF;
     margin-top: -60px;
     padding: 0 10px 40px 10px;
     h2 {
@@ -18,8 +18,8 @@
             padding: 0;
             width: 100%;
             .inner {
-                background: #FFF;
                 box-shadow: 0 1px 1px #C8CFE6;
+                border: 1px solid @lightGrey;
                 cursor: pointer;
                 padding: 5px 20px;
                 .rounded;
@@ -57,6 +57,11 @@
     }
 }
 
+main.row .content-wrapper.game-wrapper {
+    padding: 20px 40px 40px 40px;
+    box-shadow: 2px 0px 3px 0px rgba(50, 50, 50, 0.05);
+}
+
 #game {
     h3 {
         color: @red;
@@ -90,8 +95,7 @@
             margin: 20px 0 20px 30px;
         }
         .image {
-            float: right;
-            padding: 10px 0 30px 30px;
+            text-align: center;
         }
     }
     .sub-content {
@@ -112,40 +116,28 @@
     h2 {
         margin: 0;
         background: @grey;
-        height: 72px;
-        line-height: 72px;
+        height: 60px;
+        line-height: 60px;
         padding: 0 20px;
         color: #FFF;
         font-weight: bold;
-        box-shadow: inset 2px 0px 1px 0px rgba(50, 50, 50, 0.1);
+        box-shadow: inset 2px 0px 1px 0px rgba(50, 50, 50, 0.2);
     }
     li {
-        height: 55px;
+        height: 45px;
         background: #FFF;
-        box-shadow: inset 2px 0px 1px 0px rgba(50, 50, 50, 0.03);
+        box-shadow: inset 2px 0px 1px 0px rgba(50, 50, 50, 0.07);
         margin: 0;
-        border-bottom: 1px solid @lightGrey;
         cursor: pointer;
         > div {
             float: left;
-            line-height: 55px;
-            &.number {
-                width: 20%;
-                text-align: center;
-                border-right: 1px solid @lightGrey;
-            }
+            line-height: 45px;
             &.title {
                 padding: 0 10px 0 20px;
-                width: 80%;
-            }
-        }
-        &.active { 
-            > div.number {
-                background: @red;
-                color: #FFF;
-            }
-            > div.title {
-                background: @lightGrey;
+                a {
+                    color: @darkGrey;
+                    text-decoration: none;
+                }
             }
         }
         &:hover {

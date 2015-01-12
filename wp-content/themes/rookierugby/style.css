@@ -628,6 +628,7 @@ Version:    1.0.0
   font-weight: 300;
   margin: 0 auto;
   max-width: 60%;
+  text-transform: none;
 }
 #overview #lead a {
   text-align: center;
@@ -800,7 +801,7 @@ Version:    1.0.0
           transform: translate3d(0, 0, 0);
 }
 #games {
-  background: #f0f2f7;
+  background: #FFF;
   margin-top: -60px;
   padding: 0 10px 40px 10px;
 }
@@ -822,8 +823,8 @@ Version:    1.0.0
   width: 100%;
 }
 #games ul#cards li .inner {
-  background: #FFF;
   box-shadow: 0 1px 1px #C8CFE6;
+  border: 1px solid #f0f2f7;
   cursor: pointer;
   padding: 5px 20px;
   border-radius: 3px;
@@ -857,6 +858,10 @@ Version:    1.0.0
 #games ul#cards li .inner p {
   margin: 10px 0 0 0;
 }
+main.row .content-wrapper.game-wrapper {
+  padding: 20px 40px 40px 40px;
+  box-shadow: 2px 0px 3px 0px rgba(50, 50, 50, 0.05);
+}
 #game h3 {
   color: #d5183c;
   border-bottom: 1px solid #f0f2f7;
@@ -884,8 +889,7 @@ Version:    1.0.0
   margin: 20px 0 20px 30px;
 }
 #game .entry-content .image {
-  float: right;
-  padding: 10px 0 30px 30px;
+  text-align: center;
 }
 #game .sub-content p {
   margin: 10px 0;
@@ -899,40 +903,30 @@ Version:    1.0.0
 #game-sidebar h2 {
   margin: 0;
   background: #a2adc6;
-  height: 72px;
-  line-height: 72px;
+  height: 60px;
+  line-height: 60px;
   padding: 0 20px;
   color: #FFF;
   font-weight: bold;
-  box-shadow: inset 2px 0px 1px 0px rgba(50, 50, 50, 0.1);
+  box-shadow: inset 2px 0px 1px 0px rgba(50, 50, 50, 0.2);
 }
 #game-sidebar li {
-  height: 55px;
+  height: 45px;
   background: #FFF;
-  box-shadow: inset 2px 0px 1px 0px rgba(50, 50, 50, 0.03);
+  box-shadow: inset 2px 0px 1px 0px rgba(50, 50, 50, 0.07);
   margin: 0;
-  border-bottom: 1px solid #f0f2f7;
   cursor: pointer;
 }
 #game-sidebar li > div {
   float: left;
-  line-height: 55px;
-}
-#game-sidebar li > div.number {
-  width: 20%;
-  text-align: center;
-  border-right: 1px solid #f0f2f7;
+  line-height: 45px;
 }
 #game-sidebar li > div.title {
   padding: 0 10px 0 20px;
-  width: 80%;
 }
-#game-sidebar li.active > div.number {
-  background: #d5183c;
-  color: #FFF;
-}
-#game-sidebar li.active > div.title {
-  background: #f0f2f7;
+#game-sidebar li > div.title a {
+  color: #616c77;
+  text-decoration: none;
 }
 #game-sidebar li:hover {
   background: #f7f8fb;
@@ -1713,7 +1707,7 @@ html.mm-opening .mm-fixed-bottom {
 }
 body {
   position: relative;
-  background: #3b3e45;
+  background: #FFF;
 }
 body.dimmed {
   overflow: hidden;

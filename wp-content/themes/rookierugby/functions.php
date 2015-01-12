@@ -36,7 +36,7 @@ add_action( 'after_setup_theme', 'rookierugby_setup' );
 
 //Add Image Sizes ---------------------------------------------------------------------------------------------------------------
 
-add_image_size( 'card', 323, 216, true );
+add_image_size( 'card', 615, 410, true );
 
 
 // Selects Custom Post Type Templates for single and archive pages ---------------------------------------------------------------

@@ -112,4 +112,28 @@ em {
   font-style: italic;
 }
 
+table {
+  width: 100%;
+  font-size: 13px;
+  thead {
+    background: @red;
+    color: #FFF;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    th {
+      padding: 0 10px;
+    }
+  }
+  tr {
+    height: 35px;
+    line-height: 35px;
+    td {
+      padding: 0 10px;
+    }
+  }
+  tr:nth-child(even) {
+    background: lighten(@lightGrey, 2%);
+  }
+}
 

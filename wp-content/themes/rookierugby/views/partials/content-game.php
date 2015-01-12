@@ -6,10 +6,10 @@
     
         <h1 class="title"><?php the_title(); ?></h1>
         <div class="meta">
-            <div class="module"><i class="icon-module"></i> <?php foreach ( $terms as $term ) { echo $term->name; } ?></div>
-            <div class="time"><i class="icon-time"></i> <?php the_field('time'); ?> minutes</div>
+            <div class="module"><?php the_field('space'); ?></div>
+            <div class="time"><i class="icon-time"></i> <?php the_field('time'); ?> mins</div>
             <div class="equipment"><i class="icon-module"></i> <?php the_field('equipment'); ?></div>
-            <div class="pdf"><a target="_blank" href="<?php the_field('pdf'); ?>">Download PDF</div>
+            <div class="pdf"><a target="_blank" href="<?php the_field('pdf'); ?>">Download PDF</a></div>
         </div>
 
     </div><!-- .entry-header -->

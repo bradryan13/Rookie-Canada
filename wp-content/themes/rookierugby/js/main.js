@@ -64,7 +64,7 @@ $( document ).ready(function() {
 
     }).scroll();
 
-    $(".card .inner").click(function(){
+    $("#cards .card .inner").click(function(){
          window.location=$(this).find("a").attr("href"); 
          return false;
     });
