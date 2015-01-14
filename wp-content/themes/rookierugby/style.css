@@ -171,6 +171,10 @@ main.row .content-wrapper a {
   color: #616c77;
   border-bottom: 1px dotted #d5183c;
 }
+aside .inner {
+  padding: 20px;
+  text-align: center;
+}
 /*------------------------------------------------------------------
 [Sub-menu Stylesheet]
 
@@ -672,6 +676,7 @@ Version:    1.0.0
   text-align: center;
   font-size: 28px;
   color: #d5183c;
+  text-transform: none;
 }
 #overview #about .inner p {
   text-align: center;
@@ -1307,7 +1312,7 @@ img.rsImg {
 .rsSlide .sub-title {
   position: absolute;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
   top: 160px;
   z-index: 2;

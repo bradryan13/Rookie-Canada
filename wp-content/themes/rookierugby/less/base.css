@@ -4705,6 +4705,11 @@ select {
   -webkit-transition: 0.08s ease-in;
           transition: 0.08s ease-in;
 }
+.ui.button.gold {
+  background: #E5FF00;
+  color: #000;
+  border-bottom: 0;
+}
 form .ui.button {
   margin-top: 6px;
 }

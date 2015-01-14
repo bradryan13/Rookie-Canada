@@ -37,7 +37,7 @@ $( document ).ready(function() {
     });
 
     if(!Modernizr.touch){
-      skrollr.init();
+      skrollr.init({forceHeight: false});;
     };
 
 
