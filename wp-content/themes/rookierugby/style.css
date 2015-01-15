@@ -161,10 +161,12 @@ main.row .content-wrapper h1.title {
 main.row .content-wrapper img.alignright {
   float: right;
   padding: 10px 0 5px 30px;
+  max-width: 370px;
 }
 main.row .content-wrapper img.alignleft {
   float: left;
   padding: 10px 30px 5px 10px;
+  max-width: 370px;
 }
 main.row .content-wrapper a {
   text-decoration: none;
