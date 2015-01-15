@@ -64,7 +64,7 @@ $( document ).ready(function() {
 
     }).scroll();
 
-    $("#cards .card .inner, .module .inner").click(function(){
+    $("#cards .card .inner, .module .inner, #game-sidebar li").click(function(){
          window.location=$(this).find("a").attr("href"); 
          return false;
     });
