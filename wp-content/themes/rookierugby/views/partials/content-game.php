@@ -17,7 +17,7 @@
     <div class="entry-content">
 
         <h3>How to play</h3>
-        <div class="image"><?php the_post_thumbnail('card'); ?></div>
+        <div class="image"><?php the_post_thumbnail('large'); ?></div>
         <?php the_field('how_to_play'); ?>
 
     </div><!-- .entry-content -->
