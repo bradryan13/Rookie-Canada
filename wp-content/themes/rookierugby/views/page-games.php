@@ -27,26 +27,26 @@ include(locate_template('views/partials/page-header.php'));
             <h2>Programs</h2>
 
             <div class="columns module medium-6">
-                <div class="inner">
-                    <a href='#'>16-Week Plan</a>
+                <div class="a inner">
+                    <a href='#'>Module 1</a>
                 </div>
             </div>
 
             <div class="columns module medium-6">
-                <div class="inner">
-                    <a href='#'>8-Week Plan</a>
+                <div class="b inner">
+                    <a href='#'>Module 2</a>
                 </div>
             </div>
 
             <div class="columns module medium-6">
-                <div class="inner">
-                    <a href='#'>8-Week Plan</a>
+                <div class="c inner">
+                    <a href='#'>Module 3</a>
                 </div>
             </div>
 
             <div class="columns module medium-6">
-                <div class="inner">
-                    <a href='#'>4-Week Plan</a>
+                <div class="d inner">
+                    <a href='#'>Module 4</a>
                 </div>
             </div>
 
@@ -59,13 +59,12 @@ include(locate_template('views/partials/page-header.php'));
         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?> 
         <?php $terms = get_the_terms( $post->ID , 'modules' ); ?>
 
-            <li class="card <?php foreach ( $terms as $term ) { echo $term->name; } ?>">
+            <li class="card <?php foreach ( $terms as $term ) { echo $term->name . ' '; } ?>">
                 <div class="cf inner">
-<!--                     <div class="image"><?php the_post_thumbnail('card'); ?></div>
- -->                    <div class="meta">
+                    <div class="meta">
                         <div class="title"><a href="<?php echo get_permalink();?>"><?php the_title(); ?></a></div>
                         <p>This is filler text that will describe the game. The game is played in a gym or outside with 10-12 players chasing for the ball.</p>
-                        <div class="module"><i class="icon-module"></i> <?php foreach ( $terms as $term ) { echo $term->name; } ?></div>
+                        <div class="module"><i class="icon-module"></i> <?php foreach ( $terms as $term ) { echo $term->name . ' '; } ?></div>
                         <div class="time"><i class="icon-time"></i> <?php the_field('time'); ?> minutes</div>
                     </div>
                 </div>

@@ -26,6 +26,9 @@ include(locate_template('views/partials/page-header.php')); ?>
                 <?php get_template_part( 'views/partials/content', 'page' ); ?>
 
             <?php endwhile; // end of the loop. ?>
+
+            <?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
+
         </div>
     </section>
 

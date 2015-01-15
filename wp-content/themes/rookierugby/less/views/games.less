@@ -9,49 +9,50 @@
         padding: 0 0 10px 0;
         margin-bottom: 15px;
     }
-    ul#cards {
-        list-style: none;
-        margin: 0;
-        padding: 0 20px;
-        li {
-            float: left;
-            padding: 0;
-            width: 100%;
-            .inner {
-                box-shadow: 0 1px 1px #C8CFE6;
-                border: 1px solid @lightGrey;
-                cursor: pointer;
-                padding: 5px 20px;
-                .rounded;
-                img {
-                    border-radius: 3px 3px 0 0;
+}
+
+ul#cards {
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+    li {
+        float: left;
+        padding: 0;
+        width: 100%;
+        .inner {
+            box-shadow: 0 1px 1px #C8CFE6;
+            border: 1px solid @lightGrey;
+            cursor: pointer;
+            padding: 5px 20px;
+            .rounded;
+            img {
+                border-radius: 3px 3px 0 0;
+            }
+            .rounded;
+            margin: 5px 0;
+            .title {
+                padding: 5px 0;
+                font-size: 18px;
+                border-bottom:  1px solid @lightGrey;
+                a {
+                    font-family: @headerFont;
+                    color: @red;
+                    border-bottom: none;
                 }
-                .rounded;
-                margin: 5px 0;
-                .title {
-                    padding: 5px 0;
-                    font-size: 18px;
-                    border-bottom:  1px solid @lightGrey;
-                    a {
-                        font-family: @headerFont;
-                        color: @red;
-                        text-decoration: none;
-                    }
-                }
-                .module, .time {
-                    padding: 10px 0;
-                    font-weight: bold;
-                    font-size: 12px;
-                    color: @grey;
-                    text-transform: uppercase;
-                    float: left;
-                }
-                .time {
-                    float: right;
-                }
-                p {
-                    margin: 10px 0 0 0;
-                }
+            }
+            .module, .time {
+                padding: 10px 0;
+                font-weight: bold;
+                font-size: 12px;
+                color: @grey;
+                text-transform: uppercase;
+                float: left;
+            }
+            .time {
+                float: right;
+            }
+            p {
+                margin: 10px 0 0 0;
             }
         }
     }
@@ -152,11 +153,22 @@ main.row .content-wrapper.game-wrapper {
     .module {
         padding: 0 8px;
         .inner {
-            background: url('http://brads-macbook-pro-2.local:5757/wp-content/themes/rookierugby/img/safe.jpg') top center no-repeat;
             text-align: center;
             .rounded;
             position: relative;
             cursor: pointer;
+            &.a {
+                background: url('img/mod-a.jpg') top center no-repeat;
+            }
+            &.b {
+                background: url('img/mod-b.jpg') top center no-repeat;
+            }
+            &.c {
+                background: url('img/mod-c.jpg') top center no-repeat;
+            }
+            &.d {
+                background: url('img/mod-d.jpg') top center no-repeat;
+            }
             &:after {
                 background: rgba(213, 24, 60, 0.9);
                 bottom: 0;

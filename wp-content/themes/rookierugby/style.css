@@ -817,17 +817,17 @@ Version:    1.0.0
   padding: 0 0 10px 0;
   margin-bottom: 15px;
 }
-#games ul#cards {
+ul#cards {
   list-style: none;
   margin: 0;
   padding: 0 20px;
 }
-#games ul#cards li {
+ul#cards li {
   float: left;
   padding: 0;
   width: 100%;
 }
-#games ul#cards li .inner {
+ul#cards li .inner {
   box-shadow: 0 1px 1px #C8CFE6;
   border: 1px solid #f0f2f7;
   cursor: pointer;
@@ -835,21 +835,21 @@ Version:    1.0.0
   border-radius: 3px;
   margin: 5px 0;
 }
-#games ul#cards li .inner img {
+ul#cards li .inner img {
   border-radius: 3px 3px 0 0;
 }
-#games ul#cards li .inner .title {
+ul#cards li .inner .title {
   padding: 5px 0;
   font-size: 18px;
   border-bottom: 1px solid #f0f2f7;
 }
-#games ul#cards li .inner .title a {
+ul#cards li .inner .title a {
   font-family: "iskra";
   color: #d5183c;
-  text-decoration: none;
+  border-bottom: none;
 }
-#games ul#cards li .inner .module,
-#games ul#cards li .inner .time {
+ul#cards li .inner .module,
+ul#cards li .inner .time {
   padding: 10px 0;
   font-weight: bold;
   font-size: 12px;
@@ -857,10 +857,10 @@ Version:    1.0.0
   text-transform: uppercase;
   float: left;
 }
-#games ul#cards li .inner .time {
+ul#cards li .inner .time {
   float: right;
 }
-#games ul#cards li .inner p {
+ul#cards li .inner p {
   margin: 10px 0 0 0;
 }
 main.row .content-wrapper.game-wrapper {
@@ -944,11 +944,22 @@ main.row .content-wrapper.game-wrapper {
   padding: 0 8px;
 }
 #modules .module .inner {
-  background: url('http://brads-macbook-pro-2.local:5757/wp-content/themes/rookierugby/img/safe.jpg') top center no-repeat;
   text-align: center;
   border-radius: 3px;
   position: relative;
   cursor: pointer;
+}
+#modules .module .inner.a {
+  background: url('img/mod-a.jpg') top center no-repeat;
+}
+#modules .module .inner.b {
+  background: url('img/mod-b.jpg') top center no-repeat;
+}
+#modules .module .inner.c {
+  background: url('img/mod-c.jpg') top center no-repeat;
+}
+#modules .module .inner.d {
+  background: url('img/mod-d.jpg') top center no-repeat;
 }
 #modules .module .inner:after {
   background: rgba(213, 24, 60, 0.9);
