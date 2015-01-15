@@ -7,6 +7,10 @@
     </div><!-- .entry-header -->
 
     <div class="entry-content">
+
+        <div class="image">
+            <?php the_post_thumbnail( 'large' ); ?>
+        </div>
         
         <?php the_content(); ?>
 
