@@ -168,6 +168,11 @@ main.row .content-wrapper img.alignleft {
   padding: 10px 30px 5px 10px;
   max-width: 370px;
 }
+main.row .content-wrapper .image {
+  float: right;
+  padding: 10px 0 5px 30px;
+  max-width: 370px;
+}
 main.row .content-wrapper a {
   text-decoration: none;
   color: #616c77;
@@ -493,6 +498,10 @@ footer #social a {
   }
   footer #statement h3 {
     width: 80%;
+  }
+  #page-wrapper main.row .image {
+    padding: 0;
+    width: 100%;
   }
 }
 @media (max-width: 746px) {
