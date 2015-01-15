@@ -28,25 +28,25 @@ include(locate_template('views/partials/page-header.php'));
 
             <div class="columns module medium-6">
                 <div class="a inner">
-                    <a href='#'>Module 1</a>
+                    <a href='/module-1'>Module 1</a>
                 </div>
             </div>
 
             <div class="columns module medium-6">
                 <div class="b inner">
-                    <a href='#'>Module 2</a>
+                    <a href='/module-2'>Module 2</a>
                 </div>
             </div>
 
             <div class="columns module medium-6">
                 <div class="c inner">
-                    <a href='#'>Module 3</a>
+                    <a href='/module-3'>Module 3</a>
                 </div>
             </div>
 
             <div class="columns module medium-6">
                 <div class="d inner">
-                    <a href='#'>Module 4</a>
+                    <a href='/module-4'>Module 4</a>
                 </div>
             </div>
 
