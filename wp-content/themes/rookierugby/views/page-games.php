@@ -63,7 +63,6 @@ include(locate_template('views/partials/page-header.php'));
                 <div class="cf inner">
                     <div class="meta">
                         <div class="title"><a href="<?php echo get_permalink();?>"><?php the_title(); ?></a></div>
-                        <p>This is filler text that will describe the game. The game is played in a gym or outside with 10-12 players chasing for the ball.</p>
                         <div class="module"><i class="icon-module"></i> <?php foreach ( $terms as $term ) { echo $term->name . ' '; } ?></div>
                         <div class="time"><i class="icon-time"></i> <?php the_field('time'); ?> minutes</div>
                     </div>
