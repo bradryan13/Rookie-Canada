@@ -6,7 +6,13 @@ Template Name: Games
 
 <?php get_header(); 
 
-$page_header = 'Game Cards';
+$mylocale = get_bloginfo('language');
+
+if($mylocale == 'fr-FR'){
+    $page_header = 'Jeux';
+} else {
+    $page_header = 'Games';
+}
 
 include(locate_template('views/partials/page-header.php')); 
 

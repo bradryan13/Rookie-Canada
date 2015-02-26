@@ -5,7 +5,14 @@ Template Name: Rugby Clubs
 
 get_header(); 
 
-$page_header = 'Rugby Clubs';
+$mylocale = get_bloginfo('language');
+
+if($mylocale == 'fr-FR'){
+    $page_header = 'Clubs de Rugby';
+} else {
+    $page_header = 'Rugby Clubs';
+}
+
 
 include(locate_template('views/partials/page-header.php')); ?>
 

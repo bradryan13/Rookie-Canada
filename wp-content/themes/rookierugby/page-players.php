@@ -8,7 +8,7 @@ get_header();
 $mylocale = get_bloginfo('language');
 
 if($mylocale == 'fr-FR'){
-    $page_header = 'French & Parents';
+    $page_header = 'Parents et Joueurs';
 } else {
     $page_header = 'Players & Parents';
 }

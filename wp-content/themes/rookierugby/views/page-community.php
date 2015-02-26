@@ -5,7 +5,14 @@ Template Name: Community
 
 get_header(); 
 
-$page_header = 'Community Organizations';
+$mylocale = get_bloginfo('language');
+
+if($mylocale == 'fr-FR'){
+    $page_header = 'Organismes Communautaires';
+} else {
+    $page_header = 'Community Organizations';
+}
+
 
 include(locate_template('views/partials/page-header.php')); ?>
 

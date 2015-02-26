@@ -1,6 +1,12 @@
 <?php get_header(); 
 
-$page_header = 'French Games';
+$mylocale = get_bloginfo('language');
+
+if($mylocale == 'fr-FR'){
+    $page_header = 'Jeux';
+} else {
+    $page_header = 'Games';
+}
 
 include(locate_template('views/partials/page-header.php')); ?>
 

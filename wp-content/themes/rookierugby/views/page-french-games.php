@@ -22,37 +22,7 @@ include(locate_template('views/partials/page-header.php'));
 
 <main id="games" class="row">
 
-        <div class="row" id="modules">
-
-            <h2>Programs</h2>
-
-            <div class="columns module medium-6">
-                <div class="a inner">
-                    <a href='/module-1'>Module 1</a>
-                </div>
-            </div>
-
-            <div class="columns module medium-6">
-                <div class="b inner">
-                    <a href='/module-2'>Module 2</a>
-                </div>
-            </div>
-
-            <div class="columns module medium-6">
-                <div class="c inner">
-                    <a href='/module-3'>Module 3</a>
-                </div>
-            </div>
-
-            <div class="columns module medium-6">
-                <div class="d inner">
-                    <a href='/module-4'>Module 4</a>
-                </div>
-            </div>
-
-        </div>
-
-        <h2>Individual Games</h2>
+        <p>Download all games</p>
         
         <ul id="cards">
 

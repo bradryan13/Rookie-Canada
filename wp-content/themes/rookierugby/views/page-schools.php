@@ -5,7 +5,15 @@ Template Name: Schools
 
 get_header(); 
 
-$page_header = 'Schools';
+$mylocale = get_bloginfo('language');
+
+if($mylocale == 'fr-FR'){
+    $page_header = 'Écoles';
+} else {
+    $page_header = 'Schools';
+}
+
+
 
 include(locate_template('views/partials/page-header.php')); ?>
 
