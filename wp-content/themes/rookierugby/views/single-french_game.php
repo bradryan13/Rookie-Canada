@@ -11,7 +11,7 @@ include(locate_template('views/partials/page-header.php')); ?>
     <section class="content-wrapper game-wrapper large-17 columns">
     
         <div id="game">
-            <?php get_template_part( 'views/partials/content', 'game' ); ?>
+            <?php get_template_part( 'views/partials/content', 'french-game' ); ?>
         </div>
 
     </section>
