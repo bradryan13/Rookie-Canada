@@ -1,5 +1,7 @@
 <?php $terms = get_the_terms( $post->ID , 'modules' ); ?>
 
+Test
+
 <article id="game-<?php the_ID(); ?>" <?php post_class(); ?>>
     
     <div class="cf entry-header">

@@ -1,6 +1,6 @@
 <?php get_header(); 
 
-$page_header = 'Games';
+$page_header = 'French Games';
 
 include(locate_template('views/partials/page-header.php')); ?>
 
