@@ -8,13 +8,15 @@
         <div class="meta">
             <div class="module"><?php the_field('space'); ?></div>
             <div class="time"><i class="icon-time"></i> <?php the_field('time'); ?> mins</div>
-            <div class="equipment"><i class="icon-module"></i> <?php the_field('equipment'); ?></div>
             <div class="pdf"><a target="_blank" href="<?php the_field('pdf'); ?>">Download PDF</a></div>
         </div>
 
     </div><!-- .entry-header -->
 
     <div class="entry-content">
+
+        <h3>Equipment</h3>
+        <div class="equipment"><i class="icon-module"></i> <?php the_field('equipment'); ?></div>
 
         <h3>How to play</h3>
         <div class="image"><?php the_post_thumbnail('large'); ?></div>
