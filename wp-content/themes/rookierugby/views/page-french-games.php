@@ -1,6 +1,6 @@
 <?php  
 /*  
-Template Name: Games
+Template Name: French Games
 */  
 ?>
 
