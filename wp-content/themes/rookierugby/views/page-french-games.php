@@ -6,7 +6,13 @@ Template Name: French Games
 
 <?php get_header(); 
 
-$page_header = 'Game Cards';
+$mylocale = get_bloginfo('language');
+
+if($mylocale == 'fr-FR'){
+    $page_header = 'Jeux';
+} else {
+    $page_header = 'Games';
+}
 
 include(locate_template('views/partials/page-header.php')); 
 
@@ -22,7 +28,7 @@ include(locate_template('views/partials/page-header.php'));
 
 <main id="games" class="row">
 
-        <p>Download all games</p>
+        <p><a href="<?php echo get_template_directory_uri();?>/assets/jeux.pdf">Télécharger tous les jeux</a></p>
         
         <ul id="cards">
 
