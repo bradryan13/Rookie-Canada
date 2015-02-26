@@ -30,7 +30,7 @@ get_header();
     <i class="icon-close"></i>
     <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri();?>/img/large-logo.png"></a>
     <h4>Please select your primary language:</h4>
-    <div class="ui english button ghost">English</div><div class="ui button french ghost">Français (à venir)</div>
+    <div class="ui english button ghost">English</div><div class="ui button french ghost"><a href="/fr">Français</a></div>
 </div>
 
 

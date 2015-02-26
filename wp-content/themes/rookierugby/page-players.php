@@ -5,7 +5,13 @@ Template Name: Players
 
 get_header(); 
 
-$page_header = 'Players & Parents';
+$mylocale = get_bloginfo('language');
+
+if($mylocale == 'fr-FR'){
+    $page_header = 'French & Parents';
+} else {
+    $page_header = 'Players & Parents';
+}
 
 include(locate_template('views/partials/page-header.php')); ?>
 
