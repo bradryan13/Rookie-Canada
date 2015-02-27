@@ -29,7 +29,7 @@ get_header();
 <div id="language" class="modal">
     <i class="icon-close"></i>
     <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri();?>/img/large-logo.png"></a>
-    <h4>Please select your primary language:</h4>
+    <h4>Select language - Sélectionnez la langue</h4>
 
 <ul><?php pll_the_languages();?></ul>
 
