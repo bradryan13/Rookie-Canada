@@ -31,7 +31,7 @@ $( document ).ready(function() {
         $('.modal').modal('hide');
     });
 
-    $(".lang-item").click(function() {
+    $(".lang-item a").click(function() {
         $('#language.modal').modal('hide');
         $.cookie('language', 'set', { expires: 365 });
     });
