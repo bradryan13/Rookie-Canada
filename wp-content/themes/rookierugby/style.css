@@ -630,6 +630,9 @@ footer #social a {
   #language ul {
     width: 100%;
   }
+  #language ul a {
+    margin: 5px auto;
+  }
 }
 /*------------------------------------------------------------------
 [Header Stylesheet]
