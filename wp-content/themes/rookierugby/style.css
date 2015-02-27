@@ -127,12 +127,13 @@ header #log-activity a:hover {
   padding: 0 70px;
   text-decoration: none;
   border: 2px solid #FFF;
-  height: 40px;
+  height: 50px;
   line-height: 40px;
   float: left;
   border-radius: 3px;
   font-family: "iskra";
   font-weight: bold;
+  font-size: 19px;
 }
 .page-title {
   background: #e51f45 url('img/schools.jpg') center center no-repeat;

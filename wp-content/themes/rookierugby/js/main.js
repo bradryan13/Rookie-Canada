@@ -19,13 +19,6 @@
 
 $( document ).ready(function() {
 
-//modal 
-    if ($.cookie('language') == null ){
-        $('#language.modal')
-            .modal('setting', 'transition', 'vertical flip')
-            .modal('show')
-        ;
-    }
 
     $(".icon-close").click(function() {
         $('.modal').modal('hide');
@@ -112,5 +105,12 @@ $( document ).ready(function() {
 
     $(".mobile-menu").find( ".mm-subopen" ).addClass( "mm-fullsubopen" );
 
+    //modal 
+        if ($.cookie('language') == null ){
+            $('#language.modal')
+                .modal('setting', 'transition', 'vertical flip')
+                .modal('show')
+            ;
+        }
 
 });
