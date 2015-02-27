@@ -115,6 +115,12 @@ header #log-activity a:hover {
   margin: 10px;
   padding: 0 70px;
 }
+#language ul {
+  list-style: none;
+}
+#language ul li {
+  float: left;
+}
 #language .lang-item a {
   color: #FFF;
   display: inline-block;
