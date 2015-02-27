@@ -115,9 +115,6 @@ header #log-activity a:hover {
   margin: 10px;
   padding: 0 70px;
 }
-#language .button.french {
-  opacity: .5;
-}
 .page-title {
   background: #e51f45 url('img/schools.jpg') center center no-repeat;
   position: relative;
