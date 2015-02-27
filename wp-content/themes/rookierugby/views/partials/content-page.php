@@ -3,6 +3,7 @@
     <div class="entry-header">
     
         <h1 class="title"><?php the_title(); ?></h1>
+        <ul><?php pll_the_languages();?></ul>
 
     </div><!-- .entry-header -->
 
