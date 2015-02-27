@@ -8,7 +8,7 @@ Version:    1.0.0
 /*------------------------------------------------------------------
 [Header Stylesheet]
 
-Project:    RentersWarehouse.com
+Project:    RookieRugby.ca
 Version:    1.0.0
 
 1. Header
@@ -391,7 +391,8 @@ footer #social a {
   }
 }
 @media (max-width: 1023px) {
-  #menu-main-menu {
+  #menu-main-menu,
+  #menu-french-main-menu {
     display: none;
   }
   header #brand a img {
@@ -920,6 +921,9 @@ main.row .content-wrapper.game-wrapper {
 #game .entry-content .image {
   text-align: center;
 }
+#game .entry-content .equipment {
+  line-height: 1.4;
+}
 #game .sub-content p {
   margin: 10px 0;
 }
@@ -1189,7 +1193,6 @@ main.row .content-wrapper.game-wrapper {
       user-select: none;
 }
 .rsNav {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 .rsNavItem {
@@ -1251,7 +1254,6 @@ main.row .content-wrapper.game-wrapper {
 .rsVideoContainer.rsIOSVideo iframe,
 .rsVideoContainer.rsIOSVideo video,
 .rsVideoContainer.rsIOSVideo embed {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-right: 44px;
 }
@@ -1391,7 +1393,6 @@ img.rsImg {
 }
 .mm-menu > .mm-panel {
   background: #2c3240;
-  -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
@@ -1656,7 +1657,6 @@ html.mm-opened body {
   overflow: hidden;
 }
 html.mm-opened .mm-page {
-  -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
