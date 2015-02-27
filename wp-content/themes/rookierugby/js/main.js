@@ -36,6 +36,12 @@ $( document ).ready(function() {
         $.cookie('language', 'english', { expires: 365 });
     });
 
+    $(".french").click(function() {
+        $('#language.modal').modal('hide');
+        $.cookie('language', 'french', { expires: 365 });
+    });
+
+
     if(!Modernizr.touch){
       skrollr.init({forceHeight: false});;
     };
