@@ -625,6 +625,10 @@ footer #social a {
     background: #d5183c;
     visibility: hidden;
     text-align: center;
+    padding: 30px;
+  }
+  #language ul {
+    width: 100%;
   }
 }
 /*------------------------------------------------------------------
