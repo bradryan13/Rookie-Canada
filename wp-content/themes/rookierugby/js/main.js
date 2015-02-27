@@ -31,15 +31,11 @@ $( document ).ready(function() {
         $('.modal').modal('hide');
     });
 
-    $(".english").click(function() {
+    $(".lang-item").click(function() {
         $('#language.modal').modal('hide');
-        $.cookie('language', 'english', { expires: 365 });
+        $.cookie('language', 'set', { expires: 365 });
     });
 
-    $(".french").click(function() {
-        $('#language.modal').modal('hide');
-        $.cookie('language', 'french', { expires: 365 });
-    });
 
 
     if(!Modernizr.touch){
