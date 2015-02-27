@@ -533,6 +533,100 @@ footer #social a {
     width: 100%;
   }
 }
+@media (max-width: 746px) {
+  body #hero {
+    height: 420px;
+  }
+  body #hero .caption {
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+    left: 0;
+    right: 0;
+  }
+  body #hero .caption h2 {
+    font-size: 40px;
+  }
+  body #hero .caption p {
+    font-size: 18px;
+  }
+  .page-title h1 {
+    height: 100px;
+    text-align: left;
+    line-height: 100px;
+    color: #d5183c;
+    background: #f0f2f7;
+    padding-left: 15px;
+    font-size: 30px;
+  }
+  main.row .content-wrapper {
+    padding: 0 15px;
+    font-size: 14px;
+  }
+  main.row .content-wrapper h1.title {
+    font-size: 24px;
+    color: #18181a;
+  }
+  ul {
+    margin: 10px 0 10px 20px;
+  }
+  p {
+    margin-top: 20px 0;
+  }
+  header {
+    height: 50px;
+  }
+  header #brand a img {
+    margin-top: 3px;
+  }
+  header #brand {
+    margin-left: 0;
+    left: auto;
+    margin-right: 0;
+    right: 50%;
+    margin-right: -90px;
+    position: absolute;
+  }
+  #side-toggle {
+    height: 50px;
+    border-right: 1px solid #be1536;
+  }
+  .home .medium-8 {
+    margin-bottom: 20px;
+  }
+  a.title {
+    top: 25px;
+    padding: 0;
+  }
+  #page-wrapper main.row .image {
+    padding: 0 0 20px 0;
+  }
+  body #hero .hero-bg {
+    background: url('img/hero-bg.jpg') top left no-repeat;
+  }
+  body .rsSlide .sub-title {
+    display: none;
+  }
+  body #overview .row {
+    margin-bottom: 5px ;
+  }
+  body #overview {
+    margin-top: 30px;
+  }
+  #language {
+    width: 300px;
+    position: fixed;
+    left: 50%;
+    margin-left: -150px;
+    top: 50%;
+    height: 500px;
+    margin-top: -250px;
+    z-index: 1001;
+    background: #d5183c;
+    visibility: hidden;
+    text-align: center;
+  }
+}
 /*------------------------------------------------------------------
 [Header Stylesheet]
 
