@@ -118,7 +118,7 @@ header #log-activity a:hover {
 #language ul {
   list-style: none;
   margin: 15px auto;
-  width: 438px;
+  width: 460px;
 }
 #language .lang-item a {
   color: #FFF;
@@ -131,6 +131,8 @@ header #log-activity a:hover {
   line-height: 40px;
   float: left;
   border-radius: 3px;
+  font-family: "iskra";
+  font-weight: bold;
 }
 .page-title {
   background: #e51f45 url('img/schools.jpg') center center no-repeat;
