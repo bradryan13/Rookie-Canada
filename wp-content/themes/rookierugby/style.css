@@ -151,6 +151,17 @@ header #log-activity a:hover {
   z-index: 1;
   position: relative;
 }
+.entry-header ul {
+  position: absolute;
+  margin: 0;
+  right: 60px;
+  top: 35px;
+  list-style: none;
+}
+.entry-header ul li {
+  float: left;
+  margin-left: 15px;
+}
 main.row {
   margin-top: -55px;
   background: #f7f8fb;
