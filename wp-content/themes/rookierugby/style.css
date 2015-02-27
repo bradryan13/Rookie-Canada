@@ -555,7 +555,9 @@ footer #social a {
     margin-left: 0;
     left: auto;
     margin-right: 0;
-    right: 35px;
+    right: 50%;
+    margin-right: -90px;
+    position: absolute;
   }
   #side-toggle {
     height: 50px;
